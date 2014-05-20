@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 _s
 ===
 
@@ -42,9 +41,3 @@ Then, update the stylesheet header in style.css and the links in footer.php with
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
-=======
-tranquille-theme
-================
-
-It's a theme for Wordpress, based on _underscores. Zen, grey, a bit of color, wide, large text.
->>>>>>> 5e6d580b8d10ef80a74e8e5ad4f199535ad538bc
