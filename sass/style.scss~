@@ -1,0 +1,71 @@
+/*!
+Theme Name: Marzipan
+Theme URI: http://underscores.me/
+Author: Lara Dufour
+Author URI: http://laradufour.fr
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: marzipan
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ Marzipan is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+// BREAK POINTS
+$bp-huge: 1600px;
+$bp-big: 1200px;
+$bp-medium: 800px;
+$bp-small: 600px;
+$bp-tiny: 400px;
+
+// $legacy-support-for-ie: true !default; /* 1 */
+// $legacy-support-for-mozilla: true !default; /* 1 */
+
+// $print-stylesheet: true !default; /* 2 */
+
+
+// $gutter: 20px !default; /* 3 */
+
+// $base-font-size: 16 !default; /* 4 */
+
+//@import 'partials/normalize';
+@import "knacss/knacss";
+//@import 'partials/knacss-reset';
+
+//PARTIALS
+@import 'partials/colors';
+@import 'partials/helpers';
+@import 'partials/typography';
+@import 'partials/forms';
+@import 'partials/layout';
+@import 'partials/application';
+
+//MODULES
+@import 'modules/header';
+@import 'modules/menu';
+@import 'modules/content';
+@import 'modules/sidebar';
+@import 'modules/breadcrumb';
+@import 'modules/widgets';
+@import 'modules/search';
+@import 'modules/posts';
+@import 'modules/comments';
+@import 'modules/archive'; // héritera beaucoup de posts
+@import 'modules/home'; // héritera beaucoup de posts
+@import 'modules/single'; // héritera beaucoup de posts
+@import 'modules/page'; // héritera beaucoup de posts
+@import 'modules/errors';
+
+@import 'modules/realisations';
+

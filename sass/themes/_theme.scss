@@ -1,0 +1,60 @@
+// colors
+$primary-color: #009BCD;
+
+body,
+button,
+select,
+textarea {
+	color: #444444;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+body {
+	background-color: #E3E5E7;
+	background-position: top center;
+	background-repeat: no-repeat; // because we have a random background-image
+}
+
+a {
+  -webkit-transition: color 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+  color: $primary-color;
+  text-decoration: none;
+  border-bottom: 0 solid rgba(69, 69, 69, 0);
+}
+
+.no-touch a:hover {
+  color: $primary-color;
+}
+
+.no-touch a:active {
+  color: adjust-lightness($primary-color, 20);
+}
+
+.no-touch .entry-content a:hover,
+.no-touch .entry-meta a:hover,
+.no-touch .entry-footer a:hover,
+.no-touch .author-site a:hover {
+	text-decoration: underline;
+}
+
+.no-touch .entry-content a:active,
+.no-touch .entry-meta a:active,
+.no-touch .entry-footer a:active,
+.no-touch .author-site a:active {
+	text-decoration: underline;
+}
+
+blockquote {
+	border-color: $primary-color;
+}
+
+/* =HEADER
+---------------------------------------------*/
+
+.site-header{
+	&, a {
+		color: #fff;
+		text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	}
+}

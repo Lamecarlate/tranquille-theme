@@ -1,0 +1,86 @@
+/* =Figures & =Gallery
+--------------------------------------------*/
+
+
+.post-figure {
+	@include intrinsic(width, min-content);
+
+	border-radius: 5px;
+	overflow: hidden;
+
+	&:not(.alignleft):not(.alignright):not(.aligncenter) {
+		margin: .5em;
+	}
+
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+
+	.post-figcaption {
+		padding: 2px 6px;
+		background: #fff;
+	}
+}
+
+/**
+ * some calculus from Cleaner Gallery Stylesheet
+ * @version 20130526
+ */
+
+.gallery {
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+.gallery-row {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin:  0;
+	padding: .5em 0;
+	text-align: center;
+}
+
+
+.gallery-item {
+
+	text-align: center;
+
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 0 .5em 1em .5em;
+
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+
+	display: inline-block;
+	vertical-align: top;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+}
+
+.gallery-icon img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.gallery-caption {
+	margin: 0;
+	padding: 2px 6px;
+	background: #fff;
+	text-align: left;
+
+}
+
+
+
+/* Gallery item sizes depending on the number of columns */
+.gallery-col-0 .gallery-item { width: 100%;  }
+@for $i from 1 to 30 {
+	.gallery-col-#{$i} .gallery-item {
+		width: (90/$i) * 1%;
+	}
+}

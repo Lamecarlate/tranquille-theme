@@ -1,0 +1,1578 @@
+/*
+Theme Name: Decode
+Theme URI: http://ScottHSmith.com/projects/decode/
+Author: Scott Smith
+Author URI: http://ScottHSmith.com/
+Description: A minimal, modern theme, designed to be mobile first and fully responsive, Decode features the ability to change all the colors in the theme and an elegant sidebar conveniently accessed by tapping on the menu icon. The sidebar can fit all of your widgets and its position can be customized. You can also choose to keep the sidebar always visible on larger screens for an elegent two-column experience. You can even disable the sidebar and comment links if you choose. Decode supports link posts, where the title can be hyperlinked. Decode includes custom social icons in the header that you can easily link to your choice of 30 different social profiles from Twitter, and App.net, to Pinterest and LinkedIn, you will be sure to find support for the network you want alongside a bevy of customizations to make your site unique. Lastly, Decode is also built alongside a companion plugin that adds a sleek reply tool that lets readers send you a reply about the post using Twitter or App.net. <a href="http://scotthsmith.com/projects/decode/">More info here</a>
+Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, white, yellow, dark, light
+Version: 2.8.3
+Text Domain: decode
+License: GNU General Public License
+License URI: LICENSE.txt
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* =Global
+----------------------------------------------- */
+/* Headings */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000329}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000333}}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* Text elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000342}}
+p {
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000347}}
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000351}}
+ul {
+  list-style: disc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000355}}
+ol {
+  list-style: decimal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000360}}
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000365}}
+dt {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000369}}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000374}}
+b,
+strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000381}}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000385}}
+blockquote {
+  margin: 0 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000389}}
+address {
+  margin: 0 0 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\0000393}}
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003106}}
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003111}}
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003117}}
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003123}}
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003131}}
+sup {
+  bottom: 1ex;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003135}}
+sub {
+  top: .5ex;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003139}}
+small {
+  font-size: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003143}}
+big {
+  font-size: 125%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003147}}
+figure {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003151}}
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003156}}
+th {
+  font-weight: bold;
+}
+
+/* Micro Clearfix */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003163}}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003168}}
+.cf:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003172}}
+.cf {
+  zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003179}}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003191}}
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003199}}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-transition: border 0.25s ease-out, color 0.25s ease-out;
+  transition: border 0.25s ease-out, color 0.25s ease-out;
+  border: 1px solid #C0C0C0;
+  border-radius: 3px;
+  background: transparent;
+  color: #009BCD;
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  height: 2.15em;
+  padding: 0 0.7em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003217}}
+.no-touch button:hover,
+.no-touch input[type="button"]:hover,
+.no-touch input[type="reset"]:hover,
+.no-touch input[type="submit"]:hover {
+  border: 1px solid #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003228}}
+.no-touch button:focus,
+.no-touch input[type="button"]:focus,
+.no-touch input[type="reset"]:focus,
+.no-touch input[type="submit"]:focus,
+.no-touch button:active,
+.no-touch input[type="button"]:active,
+.no-touch input[type="reset"]:active,
+.no-touch input[type="submit"]:active {
+  border-color: #007EA6;
+  color: #007EA6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003234}}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003239}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003244}}
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003250}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003262}}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  -webkit-transition: border 0.25s ease-out, color 0.25s ease-out, background 0.25s ease-out;
+  transition: border 0.25s ease-out, color 0.25s ease-out, background 0.25s ease-out;
+  color: #C0C0C0;
+  height: 2.15em;
+  padding: 0.3em;
+  border: 1px solid #C0C0C0;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0);
+  -webkit-appearance: none;
+  width: 60%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003281}}
+.no-touch input[type="text"]:hover,
+.no-touch input[type="email"]:hover,
+.no-touch input[type="password"]:hover,
+.no-touch input[type="search"]:hover,
+.no-touch input[type="tel"]:hover,
+.no-touch input[type="url"]:hover,
+.no-touch textarea:hover {
+  color: #A6A6A6;
+  border-color: #A6A6A6;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003300}}
+.no-touch input[type="text"]:focus,
+.touch input[type="text"]:focus,
+.no-touch input[type="email"]:focus,
+.touch input[type="email"]:focus,
+.no-touch input[type="password"]:focus,
+.touch input[type="password"]:focus,
+.no-touch input[type="search"]:focus,
+.touch input[type="search"]:focus,
+.no-touch input[type="tel"]:focus,
+.touch input[type="tel"]:focus,
+.no-touch input[type="url"]:focus,
+.touch input[type="url"]:focus,
+.no-touch textarea:focus,
+.touch textarea:focus {
+  color: #444444;
+  outline: none;
+  background: white;
+  border-color: #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003307}}
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 98%;
+}
+
+/* Links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003318}}
+a {
+  -webkit-transition: color 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+  color: #009BCD;
+  text-decoration: none;
+  border-bottom: 0 solid rgba(69, 69, 69, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003326}}
+.no-touch a:hover {
+  color: #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003330}}
+.no-touch a:active {
+  color: #007EA6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003336}}
+.no-touch .entry-content a:hover,
+.no-touch .entry-meta a:hover,
+.no-touch .author-site a:hover {
+  border-bottom: 1px solid #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003342}}
+.no-touch .entry-content a:active,
+.no-touch .entry-meta a:active,
+.no-touch .author-site a:active {
+  border-bottom: 1px solid #007EA6;
+}
+
+/* Alignment */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003348}}
+.entry-content .alignleft {
+  display: inline;
+  float: left;
+  margin-right: 2.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003354}}
+.entry-content .alignright {
+  display: inline;
+  float: right;
+  margin-left: 2.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003360}}
+.entry-content .aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text meant only for screen readers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003368}}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003375}}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/* Clearing */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003409}}
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: '';
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003419}}
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/* Make sure embeds and iframes fit their containers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003427}}
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003435}}
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =Media
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003449}}
+.site-branding img,
+.site-content img,
+.site-footer img,
+.sidebar img,
+img.size-full,
+.comment-content img,
+.widget img {
+  max-width: 100%;
+  /* Fluid images for posts, comments, and widgets */
+  height: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003457}}
+.entry-content img,
+img[class*="align"],
+img[class*="wp-image-"] {
+  height: auto;
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003464}}
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003471}}
+.wp-caption {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003477}}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003483}}
+.wp-caption-text {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003487}}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003491}}
+.wp-caption.left {
+  float: left;
+  margin-right: 1.2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003496}}
+.wp-caption.right {
+  float: right;
+  margin-left: 1.2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003501}}
+.site-main .gallery {
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003507}}
+.site-main .gallery a img {
+  border: none;
+  height: auto;
+  max-width: 90%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003513}}
+.site-main .gallery dd {
+  margin: 0;
+}
+
+/* Langages */
+/* if foreign langage, put it in italics */
+/* the html tag has a lang attribute so it must be excluded */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003520}}
+html [lang] {
+  font-style: italic;
+}
+
+/* revert if interlocked */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003525}}
+html [lang] [lang] {
+  font-style: normal;
+}
+
+/* Make sure embeds and iframes fit their containers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003535}}
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* =Header
+----------------------------------------------- */
+/* =Content
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003550}}
+.site-main,
+.site-footer {
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003555}}
+.site-footer {
+  margin-bottom: 3.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003561}}
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003565}}
+.byline {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003570}}
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003576}}
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 0 0 2.5%;
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003581}}
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003586}}
+.entry-header {
+  margin: 5% auto 3.5%;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003591}}
+article.page .entry-header {
+  font-size: 1.25em;
+  margin: 2.5% auto 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003596}}
+body.single-attachment .entry-header {
+  padding-top: 5%;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003601}}
+a .attachment-post-thumbnail {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003607}}
+.no-touch a .attachment-post-thumbnail:hover {
+  opacity: 0.8;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003611}}
+.no-touch a .attachment-post-thumbnail:active {
+  opacity: 0.9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003615}}
+.entry-title {
+  color: #444444;
+  text-decoration: none;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 1.5em;
+  line-height: 1.25;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003626}}
+.entry-title a {
+  color: #444444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003630}}
+article.post {
+  width: 100%;
+  margin: 5% auto 10%;
+  line-height: 1.65;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003636}}
+.entry-content h1 {
+  font-size: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003640}}
+.entry-content h2 {
+  font-size: 1.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003644}}
+.entry-content h3 {
+  font-size: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003648}}
+.entry-content h4 {
+  font-size: 1.375em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003652}}
+.entry-content h5 {
+  font-size: 1.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003656}}
+.entry-content h6 {
+  font-size: 1.125em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003660}}
+.entry-content img {
+  margin: 2.5% auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003664}}
+.entry-content .video-player img {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003668}}
+body.single-attachment .entry-content .attachment {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003672}}
+body.single-attachment .entry-meta {
+  margin-top: 1.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003677}}
+.post blockquote,
+.page blockquote {
+  margin: 1.5% 0;
+  padding: 0 0 0 5%;
+  border-left: 1px solid #009BCD;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003684}}
+.read-more {
+  color: #444444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003688}}
+.entry-meta {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003692}}
+.post .entry-meta {
+  /*width: 90%;*/
+  padding-bottom: 0.5%;
+  border-bottom: 1px solid #009BCD;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003699}}
+.post .entry-meta.above-content {
+  width: auto;
+  display: inline-block;
+  padding: 0 2.5% 1%;
+  margin: 0 auto 1.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003708}}
+.entry-meta .date,
+.tags,
+.categories {
+  font-size: 0.8em;
+  clear: both;
+  margin: 1.5% 0;
+  color: #808080;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003715}}
+.entry-meta .date {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003719}}
+.entry-meta .date a {
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  color: #808080;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003725}}
+.no-touch .entry-meta .date a:hover {
+  color: #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003729}}
+.no-touch .entry-meta .date a:active {
+  color: #007EA6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003734}}
+.no-touch .post .entry-meta .date a:hover,
+.post .entry-meta .date a:active {
+  margin-top: 3.5%;
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003740}}
+.theme-info,
+.site-colophon {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003746}}
+.no-touch .theme-info a:hover,
+.no-touch .site-colophon a:hover {
+  border-bottom: 1px solid #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003751}}
+.no-touch .theme-info a:active,
+.no-touch .site-colophon a:active {
+  border-bottom: 1px solid #007EA6;
+}
+
+/* =Links
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003759}}
+.format-link .entry-title a {
+  text-decoration: underline;
+  color: #444444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003764}}
+.no-touch .format-link .entry-title a:hover {
+  color: #009BCD;
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003769}}
+.no-touch .format-link .entry-title a:active {
+  color: #007EA6;
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003774}}
+.link-title-arrow {
+  padding: 0 0.25em;
+}
+
+/* =Quotes
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003783}}
+.blog .format-quote blockquote,
+.single .format-quote blockquote,
+.archive .format-quote blockquote {
+  margin-top: 3%;
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003789}}
+.format-quote blockquote {
+  padding-left: 20px;
+  border-left: 4px solid #007EA6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003797}}
+.format-quote .entry-meta .date:before,
+.format-quote .reply .replytrigger:before,
+.format-quote .entry-meta .date:after,
+.format-quote .reply .replytrigger:after {
+  content: "";
+}
+
+/* =Asides
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003805}}
+.blog .format-aside .entry-header,
+.archive .format-aside .entry-header {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003809}}
+.format-aside .entry-content {
+  font-style: italic;
+}
+
+/* =Audio
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003816}}
+.mejs-container {
+  max-width: 100% !important;
+  /* The WP audio player (before 3.6) has a hardcoded width of 400px, which is BS. The player in WordPress 3.6 and up doesn't need this. */
+}
+
+/* =Explore Page
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003824}}
+.explore-page {
+  margin: 5% auto 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003828}}
+.post-lists {
+  margin: 1.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003832}}
+.explore-page .search-form {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003836}}
+.explore-page .widget h1 {
+  color: #444;
+  font-size: 1.15em;
+  border-bottom: 1px solid #009BCD;
+  padding-bottom: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003843}}
+.explore-page .widget:not(.search) {
+  -webkit-transition: -webkit-box-shadow 0.35s ease-out;
+  transition: box-shadow 0.35s ease-out;
+  width: 90%;
+  padding: 2.5% 5%;
+  margin: 0 auto 5%;
+  font-size: 1em;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003854}}
+.explore-page .widget:not(.search):hover {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003860}}
+.explore-page .widget.archives ul,
+.explore-page .widget.categories > ul {
+  height: 15em;
+  margin: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003867}}
+.explore-page .widget.search {
+  margin-bottom: 7.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003871}}
+.explore-page .widget.recent-posts ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* =Navigation
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003881}}
+.post-navigation,
+.paging-navigation,
+.image-navigation {
+  margin: 2.5%;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003887}}
+.nav-next,
+.nav-previous {
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003892}}
+.nav-previous,
+.nav-links a[rel="prev"] {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003899}}
+.nav-next,
+.nav-links a[rel="next"] {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003905}}
+.nav-links a {
+  -webkit-transition: padding 0.25s ease-out, color 0.25s ease-out;
+  transition: padding 0.25s ease-out, color 0.25s ease-out;
+  padding: 0;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003912}}
+.no-touch .nav-links a:hover {
+  padding: 0 2.5%;
+}
+
+/* =Comments
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003919}}
+.comments-area {
+  margin: 3.5% auto 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003924}}
+.comment,
+.comment-body {
+  margin: 2.5% 0;
+  padding-bottom: 2.5%;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003931}}
+.comment:last-child,
+.comment-body:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003936}}
+.comment-content a {
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003940}}
+.comment-author.vcard img {
+  margin: 0;
+  border-radius: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003945}}
+.comment-metadata a {
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  color: #808080;
+  font-size: 0.8em;
+  margin-right: 1.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003953}}
+.no-touch .comment-metadata a:hover {
+  color: #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003957}}
+.no-touch .comment-metadata a:active {
+  color: #007EA6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003961}}
+li.comment {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003967}}
+#respond {
+  margin-top: 7.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003971}}
+.form-allowed-tags {
+  display: none;
+  font-size: 0.9em;
+}
+
+/* =Search
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003979}}
+.search-form {
+  margin-bottom: 2.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003984}}
+.search-entry,
+.search-entry .entry-title {
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  color: #444444;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003991}}
+.search-entry .entry-title {
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\00003997}}
+.no-touch .search-entry:hover,
+.no-touch .search-entry:hover .entry-title {
+  color: #009BCD;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031002}}
+.no-touch .search-entry:active,
+.no-touch .search-entry:active .entry-title {
+  color: #007EA6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031006}}
+.search .site-main .search-form {
+  margin-top: 2.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031010}}
+.search .page-header input[type="search"] {
+  color: #808080;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0;
+  font-size: 1.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031019}}
+.no-touch .search .page-header input[type="search"]:hover {
+  border-color: #A6A6A6;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031024}}
+.search .page-header input[type="search"]:focus {
+  color: #444444;
+  border-color: #009BCD;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031030}}
+.search .page-header .search-submit {
+  font-size: 1.25em;
+  border-color: transparent;
+  padding: 0 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031037}}
+.search .post,
+.search .page {
+  margin-bottom: 10%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031041}}
+.search-highlight {
+  background: rgba(255, 255, 0, 0.25);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031045}}
+.search footer {
+  width: 90%;
+  border-bottom: 1px solid #009BCD;
+  margin: 0 auto;
+}
+
+/* =Author Section
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031054}}
+.author-section {
+  -webkit-transition: -webkit-box-shadow 0.35s ease-out;
+  transition: box-shadow 0.35s ease-out;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 3.5%;
+  margin: 0 auto 3.5%;
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031064}}
+.author-section:hover {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031069}}
+.author-image {
+  width: 25%;
+  max-width: 125px;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031075}}
+.author-image img {
+  -webkit-transition: -webkit-box-shadow 0.35s ease-out, opacity 0.35s ease-out;
+  transition: box-shadow 0.35s ease-out, opacity 0.35s ease-out;
+  border-radius: 50%;
+  display: block;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031085}}
+.no-touch .author-image img:hover {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031091}}
+.no-touch .author-image img:active {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.85;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031097}}
+.author-text {
+  width: 65%;
+  float: left;
+  margin-left: 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031103}}
+.author-name {
+  font-size: 1.4em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031107}}
+.author-name a {
+  color: #444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031112}}
+.author-site,
+.author-bio {
+  font-size: 0.9em;
+}
+
+/* Author page styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031118}}
+.author .author-section {
+  width: 90%;
+  max-width: 15em;
+  padding: 2.5%;
+  margin: 7.5% auto 0;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031127}}
+.author .author-image {
+  width: 33%;
+  max-width: 175px;
+  float: none;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031134}}
+.author .author-text {
+  width: 95%;
+  float: none;
+  margin: 0 auto;
+}
+
+/* =Widgets
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031143}}
+.widget {
+  margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031149}}
+.widget select {
+  max-width: 100%;
+}
+
+/* Search widget */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031155}}
+.widget_search .submit {
+  display: none;
+}
+
+/* =Tablets
+----------------------------------------------- */
+@media only screen and (min-width: 35em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031168}}
+  .site-header,
+  .site-main,
+  .site-footer,
+  .sidebar-style-constant .site-header,
+  .sidebar-style-constant .site-main,
+  .sidebar-style-constant .site-footer {
+    width: 82.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031172}}
+  .SidebarLink {
+    position: fixed;
+    height: 1.75em;
+    width: 1.75em;
+    top: 2.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031179}}
+  .admin-bar .SidebarLink {
+    top: 7.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031183}}
+  .SidebarLink svg {
+    width: 1.75em;
+    height: 1.75em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031188}}
+  .SidebarLink img {
+    width: 2em;
+    height: 1.75em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031193}}
+  .SidebarLink.left {
+    left: 2.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031197}}
+  .SidebarLink.right {
+    right: 2.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031201}}
+  .sidebar {
+    width: 55%;
+  }
+}
+/* =Desktop
+----------------------------------------------- */
+@media only screen and (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031212}}
+  .site-header,
+  .site-main,
+  .site-footer {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031216}}
+  .site.sidebar-style-constant {
+    margin: 0 auto;
+    width: 67%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031225}}
+  .site.sidebar-style-left {
+    right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031229}}
+  .site.sidebar-style-right {
+    left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031233}}
+  .site-scroll {
+    margin: 3.5% 2.5% 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031237}}
+  .site-scroll .site-header {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031243}}
+  .sidebar-style-constant .site-header,
+  .sidebar-style-constant .site-main,
+  .sidebar-style-constant .site-footer {
+    width: 100%;
+    max-width: 45em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031248}}
+  .page-header {
+    margin: 0 auto 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031252}}
+  .site-title a {
+    font-size: 2.8em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031256}}
+  .no-touch .site-description a:hover {
+    border-bottom: 1px solid #009BCD;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031260}}
+  .no-touch .site-description a:active {
+    color: #007EA6;
+    border-bottom: 1px solid #007EA6;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031265}}
+  .author .author-section {
+    width: 75%;
+    max-width: 100%;
+    font-size: 1.25em;
+    margin-top: 3.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031272}}
+  .sociallinks {
+    margin: 1.5% auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031276}}
+  .sociallink.mobile {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031280}}
+  .sociallink.desktop {
+    display: inline;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031285}}
+  .sociallink svg,
+  .sociallink img {
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031291}}
+  .main-navigation li {
+    margin: 0 1.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031295}}
+  .SidebarLink {
+    top: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031299}}
+  .sidebar-style-constant .SidebarLink {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031303}}
+  .sidebar.constant .SidebarTop {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031307}}
+  .sidebar {
+    width: 33%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031311}}
+  .sidebar.constant .SidebarContent {
+    margin-top: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031315}}
+  .sidebar.constant {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031323}}
+  .sidebar.constant.left {
+    border-right: 1px solid #009BCD;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031327}}
+  .sidebar.constant.right {
+    border-left: 1px solid #009BCD;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031331}}
+  .no-csstransforms .sidebar.left {
+    left: -40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031335}}
+  .no-csstransforms .sidebar.right {
+    right: -40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031339}}
+  .SidebarClose {
+    padding: 2.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031343}}
+  .entry-title {
+    font-size: 2em;
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031348}}
+  article.post {
+    margin: 2.5% auto 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031352}}
+  .entry-content h1 {
+    font-size: 2.5em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031356}}
+  .entry-content h2 {
+    font-size: 2.125em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031360}}
+  .entry-content h3 {
+    font-size: 1.75em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031364}}
+  .entry-content h4 {
+    font-size: 1.375em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031368}}
+  .entry-content h5 {
+    font-size: 1.25em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031372}}
+  .entry-content h6 {
+    font-size: 1.125em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031377}}
+  .post .entry-meta,
+  .search footer {
+    /*width: 85%;*/
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031382}}
+  .search .post,
+  .search .page {
+    margin-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031386}}
+  .explore-page .widget.search {
+    margin-bottom: 3.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031392}}
+  .blog .format-quote blockquote,
+  .single .format-quote blockquote,
+  .archive .format-quote blockquote {
+    font-size: 2em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/lara\/Cr\%C3\%A9ation\/Webdesign\/coquecigrue\/tranquille\/sass\/old\.scss}line{font-family:\000031396}}
+  .sidebar-style-constant .site-footer {
+    margin-bottom: 5%;
+  }
+}

@@ -1,0 +1,9 @@
+#page {
+	margin: 0 auto;
+	width: 960px;
+
+	@media (max-width: $large-screen) {
+		width: auto;
+		padding: 0 4px;
+	}
+}

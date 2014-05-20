@@ -1,0 +1,26 @@
+/* =Quotes
+----------------------------------------------- */
+
+.format-quote blockquote {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	line-height: 1.5;
+
+	&:first-child {
+		margin-top: .5em;
+	}
+}
+
+.format-quote blockquote {
+	padding-left: 20px;
+	border-left-style: solid;
+	border-left-width: 4px;
+}
+
+.format-quote .entry-meta .date:before,
+.format-quote .reply .replytrigger:before,
+.format-quote	.entry-meta .date:after,
+.format-quote .reply .replytrigger:after {
+	content: "";
+}

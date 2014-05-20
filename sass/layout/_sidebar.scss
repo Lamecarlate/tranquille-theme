@@ -1,0 +1,146 @@
+
+/* =Sidebar
+----------------------------------------------- */
+
+.SidebarLink {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  position: relative;
+  margin-bottom: 2.5%;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  opacity: 1;
+}
+
+.no-touch .SidebarLink:hover {
+  opacity: 0.65;
+}
+
+.no-touch .SidebarLink:active {
+  opacity: 0.85;
+}
+
+.SidebarLink svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.SidebarLink img {
+  width: 1.75em;
+  height: 1.5em;
+}
+
+.SidebarLink.left {
+  left: 5%;
+}
+
+.SidebarLink.right {
+  right: 5%;
+  float: right;
+}
+
+.SidebarTop {
+  background: #E3E5E7;
+  width: 100%;
+  margin-bottom: 7.5%;
+  border-bottom: 1px solid #009BCD;
+  cursor: pointer;
+}
+
+.no-touch .SidebarTop {
+  position: sticky;
+  top: 0;
+}
+
+.admin-bar .sidebar {
+  top: 32px;
+}
+
+.SidebarClose {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  padding: 3.5%;
+  display: block;
+  opacity: 1;
+  height: 1.4em;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.no-touch .SidebarTop:hover .SidebarClose {
+  opacity: 0.65;
+}
+
+.no-touch .SidebarTop:hover .SidebarClose:active {
+  opacity: 0.85;
+}
+
+.SidebarClose svg,
+.SidebarClose img {
+  height: 1.4em;
+  width: 1.4em;
+}
+
+.sidebar {
+  -webkit-transition: -webkit-transform 0.35s ease-out;
+  transition: transform 0.35s ease-out;
+  top: 0;
+  font-size: 0.95em;
+  background: #E3E5E7;
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 5;
+  width: 25%;
+  max-width: 30em;
+}
+
+.sidebar.left {
+  -webkit-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  transform: translateX(-110%);
+  left: 0;
+  -webkit-box-shadow: 1px 0px 15px rgba(0,0,0,0.5);
+  box-shadow: 1px 0px 15px rgba(0,0,0,0.5);
+}
+
+.sidebar.right {
+  -webkit-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  transform: translateX(110%);
+  right: 0;
+  -webkit-box-shadow: -1px 0px 15px rgba(0,0,0,0.5);
+  box-shadow: -1px 0px 15px rgba(0,0,0,0.5);
+}
+
+.SidebarContent {
+  margin: 0 5%;
+}
+
+.sidebar.left.visible,
+.sidebar.right.visible {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.no-csstransforms .sidebar.left {
+  left: -100%;
+}
+
+.no-csstransforms .sidebar.left.visible,
+.no-csstransforms .sidebar.constant.left {
+  left: 0;
+}
+
+.no-csstransforms .sidebar.right {
+  right: -100%;
+}
+
+.no-csstransforms .sidebar.right.visible,
+.no-csstransforms .sidebar.constant.right {
+  right: 0;
+}

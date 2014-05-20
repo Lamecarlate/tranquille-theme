@@ -1,0 +1,58 @@
+/*
+Theme Name: tranquille
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tranquille
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+tranquille is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+*/
+
+// Sass utilities
+@import "compass/css3";
+// @import "helpers/variables";
+// @import "helpers/functions";
+@import "helpers/mixins";
+// @import "helpers/placeholders";
+ 
+// Vendors and external stylesheets
+// @import "vendors/bootstrap";
+// @import "vendors/jquery-ui";
+ 
+// Base stuff
+@import "base/knacss";
+//@import "base/normalize";
+@import "base/typography";
+
+// Layout related stylesheets
+@import "layout/global";
+@import "layout/header";
+// @import "layout/footer";
+@import "layout/sidebar";
+@import "layout/navigation";
+
+// Components and modules
+// @import "components/buttons";
+@import "components/posts";
+@import "components/quotes";
+@import "components/figures";
+@import "components/time";
+ 
+// Page-specific stylesheets
+// @import "pages/home";
+// @import "pages/contact";
+ 
+// Themes
+@import "themes/theme";
+// @import "themes/admin";
+
+

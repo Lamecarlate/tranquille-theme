@@ -1,0 +1,26 @@
+// Sass config file
+@import "knacss/00-config";
+
+// Sass base styles
+@import "knacss/01-base";
+
+// Sass files : chose the ones you need
+@import "knacss/02-grids";
+@import "knacss/03-tables"; 
+@import "knacss/04-forms";
+@import "knacss/05-icons";
+@import "knacss/06-rwd";
+@import "knacss/07-flexbox"; 
+@import "knacss/08-print";
+@import "knacss/09-booleans";
+@import "knacss/10-gmaps";
+@import "knacss/11-ie";
+@import "knacss/12-styling";
+
+/* ----------------------------- */
+/* ==own stylesheet              */
+/* ----------------------------- */
+
+/* Here should go your own CSS styles */
+/* You can also link them with a Sass @import */
+/* @import "my-styles"; */
