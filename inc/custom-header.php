@@ -34,7 +34,7 @@ function tranquille_custom_header_setup() {
 		'admin-preview-callback' => 'tranquille_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'tranquille_custom_header_setup' );
+//add_action( 'after_setup_theme', 'tranquille_custom_header_setup' );
 
 if ( ! function_exists( 'tranquille_header_style' ) ) :
 /**

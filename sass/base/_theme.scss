@@ -96,13 +96,19 @@ blockquote {
 		transition:opacity .5s;
 	}
 
-	&:after {
+	&:before {
 		content: '\e730';
 	}
 	.opacity & {
-		&:before {
+		&:after {
 			content: '\e65f';
 			opacity:0;
+		}
+
+		@media (max-width: $small-screen) {
+			&:after {
+				content: normal;
+			}
 		}
 	}
 
@@ -113,11 +119,28 @@ blockquote {
 		text-shadow: 1px 1px 24px rgba($primary-color-light, 1);
 
 		&:after {
-			opacity:0;
-		}
-		&:before {
 			opacity:1;
 		}
+		&:before {
+			opacity:0;
+		}
+	}
+
+	@media (max-width: $small-screen) {
+		
+		&:before {
+			position: static;
+			display: block;
+			margin: 0 auto;
+		}
+
+		&:hover,
+		&:focus {
+			&:before {
+				opacity:1;
+			}
+		}
+
 	}
 }
 
@@ -203,14 +226,21 @@ input[type="url"],
 input[type="date"],
 input[type="datetime"],
 input[type="submit"],
+select,
 textarea,
 button {
 	border-color: $primary-color;
 }
 
 input[type="submit"],
+select,
 button {
 	background: $primary-color-dark;
+	color: $ui-text-color-inverted;
+	text-shadow: 1px 1px 0 $ui-text-text-shadow-color-inverted;
+}
+
+.select-container:after {
 	color: $ui-text-color-inverted;
 	text-shadow: 1px 1px 0 $ui-text-text-shadow-color-inverted;
 }

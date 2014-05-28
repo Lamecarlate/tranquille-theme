@@ -1,9 +1,10 @@
 .wrapper {
 	margin: 0 auto;
 	width: 940px;
-	padding: 5px;
+	padding: .5em;
 
 	@media (max-width: $large-screen) {
 		width: auto;
+		//padding: 
 	}
 }

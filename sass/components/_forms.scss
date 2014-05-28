@@ -6,14 +6,82 @@ input[type="url"],
 input[type="date"],
 input[type="datetime"],
 input[type="submit"],
+select,
 textarea,
 button {
 	border-style: solid;
 	border-width: 1px;
 	padding: 3px 5px;
 	border-radius: 0;
+
+	&:focus {
+		border-width: 2px;
+		outline: none;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+}
+
+select:focus {
+	border-width: 1px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 
 input + button {
 	border-left-width: 0;
+}
+
+.select-container {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	select {
+		font-size: inherit;
+		padding-right: 2.2em; /* 2em + a little space */
+		border: 0;
+		margin: 0;
+		text-indent: 0.01px;
+		text-overflow: '';
+		-webkit-appearance: button; /* hide default arrow in chrome OSX */
+	}
+
+	&:after,
+	&:before {
+		content: "";
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&:after { /* Custom dropdown arrow */
+		content: "\25BC";
+		height: 1em;
+		font-size: .625em;
+		line-height: 1;
+		right: 1.2em;
+		top: 50%;
+		margin-top: -.5em;
+	}
+
+	&:before { /* Custom dropdown arrow cover */
+		width: 2em;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	select[disabled] {
+		color: rgba(0,0,0,.3);
+	}
+
+	select[disabled]::after {
+		color: rgba(0,0,0,.1);
+	}
+
+	&:before {
+		background-color: rgba(0,0,0,.15);
+	}
+
 }
