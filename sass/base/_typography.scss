@@ -1,49 +1,29 @@
 /* =TEXT
 -----------------------------------------------*/
 
-@font-face {
-	font-family: 'Oxygen';
-	src: url('../fonts/oxygen/oxygen.eot');
-	src: url('../fonts/oxygen/oxygen.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/oxygen/oxygen.woff') format('woff'),
-		 url('../fonts/oxygen/oxygen.ttf') format('truetype'),
-		 url('../fonts/oxygen/oxygen.svg#oxygenregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@include font-face("Oxygen", 
+	font-files("oxygen/oxygen.woff", "oxygen/oxygen.ttf", "oxygen/oxygen.svg#oxygenregular"), 
+	"oxygen/oxygen.eot",
+	normal,
+	normal);
 
-@font-face {
-	font-family: 'Oxygen';
-	src: url('../fonts/oxygen/oxygen-bold.eot');
-	src: url('../fonts/oxygen/oxygen-bold.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/oxygen/oxygen-bold.woff') format('woff'),
-		 url('../fonts/oxygen/oxygen-bold.ttf') format('truetype'),
-		 url('../fonts/oxygen/oxygen-bold.svg#oxygenbold') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
+@include font-face("Oxygen", 
+	font-files("oxygen/oxygen-bold.woff", "oxygen/oxygen-bold.ttf", "oxygen/oxygen-bold.svg#oxygenbold"), 
+	"oxygen/oxygen-bold.eot",
+	bold,
+	normal);
 
-@font-face {
-	font-family: 'Oxygen';
-	src: url('../fonts/oxygen/oxygen-bolditalic.eot');
-	src: url('../fonts/oxygen/oxygen-bolditalic.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/oxygen/oxygen-bolditalic.woff') format('woff'),
-		 url('../fonts/oxygen/oxygen-bolditalic.ttf') format('truetype'),
-		 url('../fonts/oxygen/oxygen-bolditalic.svg#oxygenbold_italic') format('svg');
-	font-weight: bold;
-	font-style: italic;
-}
+@include font-face("Oxygen", 
+	font-files("oxygen/oxygen-bolditalic.woff", "oxygen/oxygen-bolditalic.ttf", "oxygen/oxygen-bolditalic.svg#oxygenbold_italic"), 
+	"oxygen/oxygen-bolditalic.eot",
+	bold,
+	italic);
 
-@font-face {
-	font-family: 'Oxygen';
-	src: url('../fonts/oxygen/oxygen-italic.eot');
-	src: url('../fonts/oxygen/oxygen-italic.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/oxygen/oxygen-italic.woff') format('woff'),
-		 url('../fonts/oxygen/oxygen-italic.ttf') format('truetype'),
-		 url('../fonts/oxygen/oxygen-italic.svg#oxygenitalic') format('svg');
-	font-weight: normal;
-	font-style: italic;
-}
+@include font-face("Oxygen", 
+	font-files("oxygen/oxygen-italic.woff", "oxygen/oxygen-italic.ttf", "oxygen/oxygen-italic.svg#oxygenitalic"), 
+	"oxygen/oxygen-italic.eot",
+	normal,
+	italic);
 
 body,
 button,
@@ -56,16 +36,20 @@ textarea {
 /* =TITLES
 ------------------------------------*/
 
-@font-face {
-	font-family: 'Libre Baskerville';
-	src: url('../fonts/librebaskerville/LibreBaskerville-Regular.eot');
-	src: url('../fonts/librebaskerville/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/librebaskerville/LibreBaskerville-Regular.woff') format('woff'),
-		 url('../fonts/librebaskerville/LibreBaskerville-Regular.ttf') format('truetype'),
-		 url('../fonts/librebaskerville/LibreBaskerville-Regular.svg#oxygenitalic') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@include font-face("Libre Baskerville", 
+	font-files("librebaskerville/librebaskerville-bold.woff", "librebaskerville/librebaskerville-bold.ttf", "librebaskerville/librebaskerville-bold.svg#libre_baskervillebold"), 
+	"librebaskerville/librebaskerville-bold.eot",
+	bold);
+
+@include font-face("Libre Baskerville", 
+	font-files("librebaskerville/librebaskerville-italic.woff", "librebaskerville/librebaskerville-italic.ttf", "librebaskerville/librebaskerville-italic.svg#libre_baskervilleitalic"), 
+	"librebaskerville/librebaskerville-italic.eot",
+	normal,
+	italic);
+
+@include font-face("Libre Baskerville", 
+	font-files("librebaskerville/librebaskerville-regular.woff", "librebaskerville/librebaskerville-regular.ttf", "librebaskerville/librebaskerville-regular.svg#libre_baskervilleregular"), 
+	"librebaskerville/librebaskerville-regular.eot");
 
 @for $i from 1 through 6 {
 	$selector : "h#{$i}, .h#{$i}-like";
@@ -79,16 +63,9 @@ textarea {
 /* =ICONS
 -------------------------------*/
 
-@font-face {
-	font-family: 'Captain Icon';
-	src:url('../fonts/capicon/captain-icon.eot');
-	src:url('../fonts/capicon/captain-icon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/capicon/captain-icon.woff') format('woff'),
-		url('../fonts/capicon/captain-icon.ttf') format('truetype'),
-		url('../fonts/capicon/captain-icon.svg#captainicon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@include font-face("Captain Icon", 
+	font-files("capicon/captain-icon.woff", "capicon/captain-icon.ttf", "capicon/captain-icon.svg#captainicon"), 
+	"capicon/captain-icon.eot");
 
 %icon {
 	font-family: 'Captain Icon';
