@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2014-05-27 11:29+0100\n"
-"PO-Revision-Date: 2014-05-27 11:32+0100\n"
+"POT-Creation-Date: 2014-05-28 12:35+0100\n"
+"PO-Revision-Date: 2014-05-28 12:36+0100\n"
 "Last-Translator: Chaopale Lamecarlate\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: francais\n"
@@ -13,7 +13,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_attr__;esc_attr_e;"
+"_nx\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: /home/lara/Création/Webdesign/coquecigrue/tranquille\n"
@@ -32,26 +33,57 @@ msgstr "Fièrement propulsé par %s"
 msgid "Theme: &laquo; %1$s &raquo; by %2$s."
 msgstr "Thème %1$s par %2$s."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:33
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:45
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:31
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "Une réaction à propos de &ldquo;%2$s&rdquo;"
+
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:34
+#, php-format
+msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr "%1$s réactions à propos de &ldquo;%2$s&rdquo;"
+
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:41
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:53
 msgid "Comment navigation"
 msgstr "Commentaires"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:34
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:46
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:42
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:54
 msgid "&larr; Older Comments"
 msgstr "&larr; Commentaires plus anciens"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:35
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:47
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:43
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr "Commentaires plus récents &rarr;"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:57
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/comments.php:65
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:20
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:16
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:26
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:6
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer.php:5
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:16
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:26
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:6
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer.php:5
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:16
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:26
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:6
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer.php:5
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:26
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-status.php:22
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content.php:37
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-aside.php:22
@@ -62,19 +94,19 @@ msgstr "Les commentaires sont fermés."
 msgid "Pages:"
 msgstr "Pages : "
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:36
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:42
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-aside.php:27
 #, php-format
 msgid "View all posts in %s category"
 msgstr "Voir tous les articles de la catégorie %s"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:45
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:51
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:6
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:16
 msgid ", "
 msgstr ", "
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:50
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:56
 #, php-format
 msgid ""
 "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
@@ -83,7 +115,7 @@ msgstr ""
 "Cet article a été tagué %2$s. Ajouter le  <a href=\"%3$s\" title=\"Permalien "
 "vers %4$s\" rel=\"bookmark\">permalien</a> en marque-page."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:52
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:58
 #, php-format
 msgid ""
 "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
@@ -92,7 +124,7 @@ msgstr ""
 "Mettez en marque-page le <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel="
 "\"bookmark\">permalien</a>."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:58
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:64
 #, php-format
 msgid ""
 "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
@@ -102,7 +134,7 @@ msgstr ""
 "\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a> en marque-"
 "page."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:60
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:66
 #, php-format
 msgid ""
 "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
@@ -111,7 +143,7 @@ msgstr ""
 "Cet article a été posté dans %1$s. Ajouter le  <a href=\"%3$s\" title="
 "\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a> en marque-page."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:74
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:80
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:30
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-page.php:24
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:10
@@ -167,24 +199,6 @@ msgstr "Classé dans : %1$s"
 #, php-format
 msgid "Tagged: %1$s"
 msgstr "Marqué avec : %1$s"
-
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:26
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:6
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer.php:5
-msgid "Leave a comment"
-msgstr "Laisser un commentaire"
-
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:26
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:6
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer.php:5
-msgid "1 Comment"
-msgstr "1 commentaire"
-
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:26
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:6
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer.php:5
-msgid "% Comments"
-msgstr "% commentaires"
 
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/archive.php:27
 #, php-format
@@ -268,15 +282,15 @@ msgstr "Résultats de recherche pour : %s"
 msgid "Sidebar"
 msgstr "Barre latérale"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/functions.php:181
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/functions.php:184
 msgid "Search for:"
 msgstr "Rechercher : "
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/functions.php:183
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/functions.php:186
 msgid "\"What are you looking for?\""
 msgstr "\"Que recherchez-vous ?\""
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/functions.php:186
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/functions.php:189
 msgid "Search"
 msgstr "Rechercher"
 
@@ -308,7 +322,7 @@ msgstr "Articles plus récents <span class=\"meta-nav\">&rarr;</span>"
 
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/inc/template-tags.php:52
 msgid "Post navigation"
-msgstr ""
+msgstr "Navigation dans les articles"
 
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/inc/template-tags.php:83
 #, php-format
