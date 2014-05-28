@@ -83,7 +83,7 @@ add_action( 'widgets_init', 'tranquille_widgets_init' );
  */
 function tranquille_scripts() {
 	//wp_enqueue_style( 'decode-style', get_stylesheet_directory_uri().'/css/style.css', array(), "2.8.3" );
-	wp_enqueue_style( 'tranquille-style', get_stylesheet_directory_uri().'/css/style.css', array(), "0.1" );
+	wp_enqueue_style( 'tranquille-style', get_stylesheet_directory_uri().'/style.css', array(), "0.1" );
 
 	wp_enqueue_script( 'tranquille-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
