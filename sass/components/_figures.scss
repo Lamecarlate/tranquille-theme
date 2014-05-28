@@ -1,9 +1,14 @@
 /* =Figures & =Gallery
 --------------------------------------------*/
 
-
 .post-figure {
-	@include intrinsic(width, min-content);
+	//@include intrinsic(width, min-content);
+
+	//display: inline-block;
+
+	img {
+		//max-width: none;
+	}
 
 	border-radius: 5px;
 	overflow: hidden;
@@ -18,6 +23,11 @@
 		padding: 2px 6px;
 		background: #fff;
 	}
+}
+
+.post-figure-container {
+	display: block;
+	margin: 0 auto;
 }
 
 /**
@@ -75,12 +85,17 @@
 
 }
 
-
-
 /* Gallery item sizes depending on the number of columns */
 .gallery-col-0 .gallery-item { width: 100%;  }
 @for $i from 1 to 30 {
 	.gallery-col-#{$i} .gallery-item {
 		width: (90/$i) * 1%;
 	}
+}
+
+/* archives thumbnail */
+.featured-image,
+.gallery-thumb {
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
 }

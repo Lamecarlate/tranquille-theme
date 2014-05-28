@@ -1,0 +1,18 @@
+body.search, 
+body.error404 {
+	.page-content {
+		.widget {
+			width: 48%;
+			display: inline-block;
+			vertical-align: top;
+
+			@media (max-width: $extra-large-screen) {
+				display: block;
+				width: auto;
+			}
+
+			margin-top: .5em;
+
+		}
+	}
+}

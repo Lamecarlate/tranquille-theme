@@ -22,37 +22,35 @@ tranquille is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 // @import "helpers/variables";
 // @import "helpers/functions";
 @import "helpers/mixins";
-// @import "helpers/placeholders";
- 
+@import "helpers/helpers";
+
 // Vendors and external stylesheets
 // @import "vendors/bootstrap";
 // @import "vendors/jquery-ui";
- 
+
 // Base stuff
 @import "base/knacss";
-//@import "base/normalize";
 @import "base/typography";
 
 // Layout related stylesheets
 @import "layout/global";
 @import "layout/header";
-// @import "layout/footer";
+@import "layout/footer";
 @import "layout/sidebar";
 @import "layout/navigation";
 
 // Components and modules
 // @import "components/buttons";
 @import "components/posts";
-@import "components/quotes";
 @import "components/figures";
-@import "components/time";
- 
+@import "components/forms";
+@import "components/search";
+@import "components/comments";
+@import "components/comment_form";
+
 // Page-specific stylesheets
 // @import "pages/home";
-// @import "pages/contact";
- 
-// Themes
-@import "themes/theme";
-// @import "themes/admin";
+ @import "pages/search_&_404";
 
-
+// Theme: colors and specific stuff
+@import "base/theme";

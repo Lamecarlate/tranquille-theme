@@ -1,0 +1,20 @@
+/* =Alignment
+--------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: .5em .5em .5em 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: .5em 0 .5em .5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: .5em auto;
+}

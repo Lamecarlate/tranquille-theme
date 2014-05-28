@@ -20,26 +20,31 @@
 
 <body <?php body_class(); ?> style="background-image: url('<?php echo tranquille_header_image() ; ?>');">
 <div id="page" class="hfeed site">
+
 	<div class="skip-links">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'tranquille' ); ?></a>
 		<a class="skip-link screen-reader-text" href="#site-navigation"><?php _e( 'Skip to menu', 'tranquille' ); ?></a>
 	</div>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-		<?php if(is_front_page() ) : ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description h1-like"><?php bloginfo( 'description' ); ?></h2>
-		<?php else : ?>
-			<div class="site-title h1-like"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-			<div class="site-description h1-like"><?php bloginfo( 'description' ); ?></div>
-		<?php endif ; ?>
+		<div class="wrapper">
+			<div class="site-branding">
+			<?php if(is_front_page() ) : ?>
+				<h1 class="site-title h1-like"><a class="site-title-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h2 class="site-description h2-like"><?php bloginfo( 'description' ); ?></h2>
+			<?php else : ?>
+				<div class="site-title h1-like"><a class="site-title-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
+				<div class="site-description h2-like"><?php bloginfo( 'description' ); ?></div>
+			<?php endif ; ?>
+			</div>
 		</div>
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'tranquille' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<div class="wrapper">
+				<button class="menu-toggle"><?php _e( 'Primary Menu', 'tranquille' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+		<div class="wrapper">

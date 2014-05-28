@@ -1,0 +1,46 @@
+.comment-list,
+.children {
+	list-style: none;
+}
+
+.comment-list {
+	padding-left: 0;
+
+	.comment-meta {
+		font-size: .8em;
+	}
+
+	.comment-content {
+		margin-bottom: .5em;
+		padding: .5em;
+		border-left-width: 1px;
+		border-left-style: solid;
+	}
+
+	.bypostauthor > .comment-content {
+		border-left-width: 2px;
+	}
+
+	.comment-author-avatar {
+		float: left;
+		margin-right: .5em;
+		margin-bottom: .5em;
+
+		overflow: hidden;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0,0,0,.2);
+	}
+
+	.comment-body {
+		clear: both;
+	}
+
+	.reply {
+		clear: both;
+		margin-top: .5em;
+	}
+}
+
+
+
+

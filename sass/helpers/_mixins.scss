@@ -1,17 +1,31 @@
 @mixin intrinsic($property, $value) {
-  @if $value == fit-content or $value == min-content or $value == max-content {
-    #{$property}: -webkit-#{$value};
-    #{$property}: -moz-#{$value};
-    #{$property}: $value;
-  }
+	@if $value == fit-content or $value == min-content or $value == max-content {
+		#{$property}: -webkit-#{$value};
+		#{$property}: -moz-#{$value};
+		#{$property}: $value;
+	}
 
-  @else if $value == fill-available or $value == available {
-    #{$property}: -webkit-fill-available;
-    #{$property}: -moz-available;
-    #{$property}: fill-available;
-  }
+	@else if $value == fill-available or $value == available {
+		#{$property}: -webkit-fill-available;
+		#{$property}: -moz-available;
+		#{$property}: fill-available;
+	}
 
-  @else {
-    #{$property}: $value;
-  }
+	@else {
+		#{$property}: $value;
+	}
+}
+
+@mixin category-picto($picto, $color:"") {
+
+	@if $picto != "" {
+		content: "#{$picto}";
+	}
+
+	@if $color != "" {
+		.post-aside-item:hover &,
+		.post-aside-item:focus & {
+			color: #{$color};
+		}
+	}
 }

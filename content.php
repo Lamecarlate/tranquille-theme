@@ -5,19 +5,29 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
+	
+
+	<header class="entry-header">
+		<h2 class="entry-title">
+			<?php the_title( sprintf( '<a href="%s" rel="bookmark" class="entry-title-link">', esc_url( get_permalink() ) ), '</a>' ); ?>
+		</h2>
+		
 		<div class="entry-meta">
 			<?php tranquille_posted_on(); ?>
+			<?php tranquille_get_post_aside(); ?>
 		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+
+	<?php if ( !is_single() ) : ?>
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php 
+		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+		  the_post_thumbnail('thumbnail',array('class' => 'alignleft featured-image'));
+		} 
+		the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
@@ -31,33 +41,6 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<footer class="entry-footer">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'tranquille' ) );
-				if ( $categories_list && tranquille_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'tranquille' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'tranquille' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'tranquille' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'tranquille' ), __( '1 Comment', 'tranquille' ), __( '% Comments', 'tranquille' ) ); ?></span>
-		<?php endif; ?>
-
-		<?php edit_post_link( __( 'Edit', 'tranquille' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	<?php tranquille_get_post_footer() ; ?>
+	
 </article><!-- #post-## -->

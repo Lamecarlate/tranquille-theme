@@ -1,0 +1,25 @@
+.comment-form {
+	label {
+		display: block;
+	}
+
+	/* the textarea */
+	#comment {
+		width: 100%;
+	}
+}
+
+/* for Wordpress Markdown Plugin */
+.wmd-panel {
+	margin-top: .75em;
+
+	.comment-form-comment {
+		margin-top: 0;
+	}
+
+	.wmd-button-row {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: .5em;
+	}
+}
