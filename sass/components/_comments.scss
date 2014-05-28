@@ -39,6 +39,14 @@
 		clear: both;
 		margin-top: .5em;
 	}
+
+	@media (max-width: $small-screen) {
+		.children {
+			padding-left: 0;
+			margin-bottom: 1em;
+		}
+	}
+
 }
 
 
