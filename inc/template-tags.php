@@ -150,9 +150,9 @@ function tranquille_get_post_aside($args = NULL) {
 	require get_template_directory() . '/template-bits/post-aside.php';
 }
 
-function tranquille_get_browse_utils() {
+function tranquille_get_widgets() {
 
-	require get_template_directory() . '/template-bits/browse-utils.php';
+	require get_template_directory() . '/template-bits/widgets.php';
 
 }
 

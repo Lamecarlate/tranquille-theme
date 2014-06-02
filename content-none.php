@@ -20,10 +20,10 @@
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'tranquille' ); ?></p>
+			<p><?php _e( 'There is nothing here. Please be patient :)', 'tranquille' ); ?></p>
 
 		<?php endif; ?>
 
-		<?php tranquille_get_browse_utils() ;?>
+		<?php tranquille_get_widgets() ;?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2014-05-28 12:35+0100\n"
-"PO-Revision-Date: 2014-05-28 12:36+0100\n"
+"POT-Creation-Date: 2014-06-02 19:32+0100\n"
+"PO-Revision-Date: 2014-06-02 19:32+0100\n"
 "Last-Translator: Chaopale Lamecarlate\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: francais\n"
@@ -83,30 +83,28 @@ msgstr "1 commentaire"
 msgid "% Comments"
 msgstr "% commentaires"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:26
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:31
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-status.php:22
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content.php:37
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-aside.php:22
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-link.php:31
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-quote.php:23
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-quote.php:22
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-page.php:18
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-image.php:24
 msgid "Pages:"
 msgstr "Pages : "
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:42
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:47
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-aside.php:27
 #, php-format
 msgid "View all posts in %s category"
 msgstr "Voir tous les articles de la catégorie %s"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:51
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:56
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:6
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:16
 msgid ", "
 msgstr ", "
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:56
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:61
 #, php-format
 msgid ""
 "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
@@ -115,7 +113,7 @@ msgstr ""
 "Cet article a été tagué %2$s. Ajouter le  <a href=\"%3$s\" title=\"Permalien "
 "vers %4$s\" rel=\"bookmark\">permalien</a> en marque-page."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:58
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:63
 #, php-format
 msgid ""
 "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
@@ -124,7 +122,7 @@ msgstr ""
 "Mettez en marque-page le <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel="
 "\"bookmark\">permalien</a>."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:64
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:69
 #, php-format
 msgid ""
 "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
@@ -134,7 +132,7 @@ msgstr ""
 "\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a> en marque-"
 "page."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:66
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:71
 #, php-format
 msgid ""
 "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
@@ -143,7 +141,7 @@ msgstr ""
 "Cet article a été posté dans %1$s. Ajouter le  <a href=\"%3$s\" title="
 "\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a> en marque-page."
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:80
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-single.php:85
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:30
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-page.php:24
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/post-footer-date.php:10
@@ -152,10 +150,8 @@ msgid "Edit"
 msgstr "Éditer"
 
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-status.php:19
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content.php:34
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-aside.php:19
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-link.php:28
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-quote.php:20
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-quote.php:19
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-image.php:21
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
@@ -185,10 +181,8 @@ msgstr ""
 "avec d'autres mots-clés."
 
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/content-none.php:23
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
+msgid "There is nothing here. Please be patient :)"
+msgstr "Il n'y a rien ici. Soyez patient :)"
 
 #: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/post-footer.php:10
 #, php-format
@@ -294,11 +288,11 @@ msgstr "\"Que recherchez-vous ?\""
 msgid "Search"
 msgstr "Rechercher"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/browse-utils.php:5
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/widgets.php:5
 msgid "Most Used Categories"
 msgstr "Catégories les plus utilisées"
 
-#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/browse-utils.php:22
+#: /home/lara/CrÃ©ation/Webdesign/coquecigrue/tranquille/template-bits/widgets.php:22
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Essayez plutôt avec les archives du mois. %1$s"
