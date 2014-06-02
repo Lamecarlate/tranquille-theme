@@ -6,7 +6,6 @@
 /* =COLORS
 -------------------------------------------*/
 
-$background-color: #E3E5E7;
 $background-color: #f3f5f7;
 
 $primary-color: adjust-lightness(#009BCD,-10);
@@ -171,7 +170,9 @@ blockquote {
 	}
 }
 
-
+.nav-menu .current-menu-item a {
+	background: $primary-color-dark;
+}
 
 .sub-menu {
 
