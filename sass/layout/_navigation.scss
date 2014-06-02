@@ -26,6 +26,7 @@
 
 .nav-menu a {
 	padding: .5em .5em .5em 0;
+	padding: .5em;
 }
 
 .main-navigation a {
@@ -55,7 +56,6 @@
 .main-navigation ul ul a:hover {
 }
 .main-navigation ul li:hover > ul {
-	//display: block;
 	left: 0;
 }
 .main-navigation .current_page_item a,
@@ -65,6 +65,7 @@
 .menu-toggle {
 	display: none;
 }
+
 @media screen and (max-width: $medium-screen) {
 	
 	.main-navigation {
@@ -78,16 +79,24 @@
 		display: block;
 	}
 
-	.main-navigation ul {
+	.nav-menu {
 		display: none;
 	}
 
 	.main-navigation li,
 	.main-navigation a {
 		display: block;
+	}
 
+	.main-navigation ul ul a {
+		width: auto;
+	}
+
+	.main-navigation ul ul {
+		position: static;
 	}
 }
+
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {

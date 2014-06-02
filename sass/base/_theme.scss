@@ -155,7 +155,7 @@ blockquote {
 	text-shadow: 1px 1px 0 $ui-link-text-shadow-color-inverted;
 }
 
-.nav-menu > li > a {
+.nav-menu a {
 	color: $ui-link-color-inverted;
 	text-shadow: 1px 1px 0 $ui-link-text-shadow-color-inverted;
 
@@ -167,37 +167,43 @@ blockquote {
 }
 
 .sub-menu {
-	background: $background-color;
-	box-shadow: 0 0 5px rgba(0,0,0,.5);
 
-	&:after {
-	 	.csstransforms & {
-			content: '';
-			height: 1em;
-			width: 1em;
-			background: $background-color;
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
-			transform: rotate(45deg);
-			position: absolute;
-			bottom: calc(100% - .5em);
-			left: 1em;
-			z-index: -1;
+	@media screen and (min-width: $medium-screen) {
+
+		background: $background-color;
+		box-shadow: 0 0 5px rgba(0,0,0,.5);
+
+		&:after {
+		 	.csstransforms & {
+				content: '';
+				height: 1em;
+				width: 1em;
+				background: $background-color;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+				position: absolute;
+				bottom: calc(100% - .5em);
+				left: 1em;
+				z-index: -1;
+			}
 		}
-	}
 
-	a {
-		color: $ui-link-color;
-		text-shadow: 1px 1px 0px $ui-text-shadow-color;
-	}
+		a {
+			color: $ui-link-color;
+			text-shadow: 1px 1px 0px $ui-text-shadow-color;
+		}
 
-	a:hover,
-	a:focus {
-		background: $ui-link-focus-background;
-		color: $ui-link-focus-color;
-		text-shadow: 1px 1px 0 $ui-link-focus-text-shadow-color;
-		outline:none;
+		a:hover,
+		a:focus {
+			background: $ui-link-focus-background;
+			color: $ui-link-focus-color;
+			text-shadow: 1px 1px 0 $ui-link-focus-text-shadow-color;
+			outline:none;
+		}
+
+
 	}
 
 }

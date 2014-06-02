@@ -20,26 +20,15 @@
 		
 	</header><!-- .entry-header -->
 
-
-	<?php if ( !is_single() ) : ?>
 	<div class="entry-summary">
 		<?php 
 		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-		  the_post_thumbnail('thumbnail',array('class' => 'alignleft featured-image'));
+		  the_post_thumbnail('thumbnail',array('class' => 'alignleft featured-image featured-image-thumbnail'));
 		} 
-		the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-	<?php else : ?>
-	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'tranquille' ) ); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'tranquille' ),
-				'after'  => '</div>',
-			) );
+
+		the_excerpt(); 
 		?>
-	</div><!-- .entry-content -->
-	<?php endif; ?>
+	</div><!-- .entry-summary -->
 
 	<?php tranquille_get_post_footer() ; ?>
 	
