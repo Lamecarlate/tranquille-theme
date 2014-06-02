@@ -1,5 +1,9 @@
-/* =Figures & =Gallery
---------------------------------------------*/
+/* ==IMAGES
+* Apparence of figures in articles
+=============================================*/
+
+/* =FIGURES
+------------------------------------*/
 
 .post-figure {
 
@@ -39,6 +43,8 @@
 	}
 }
 
+/* =GALLERY
+------------------------------------*/
 
 /**
  * some calculus from Cleaner Gallery Stylesheet
@@ -102,6 +108,9 @@
 		width: (90/$i) * 1%;
 	}
 }
+
+/* =FEATURED-IMAGE
+------------------------------------------------*/
 
 /* archives thumbnail */
 .featured-image,

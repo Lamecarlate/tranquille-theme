@@ -1,3 +1,12 @@
+/* ==MIXINS
+* 
+==========================================*/
+
+/*
+* this one was used until I saw it didn't work well with max-width: 100%;
+* play with it if you want
+* intrinsic size: http://dev.w3.org/csswg/css-sizing/
+*/
 @mixin intrinsic($property, $value) {
 	@if $value == fit-content or $value == min-content or $value == max-content {
 		#{$property}: -webkit-#{$value};
@@ -16,6 +25,9 @@
 	}
 }
 
+/*
+* return a picto
+*/
 @mixin category-picto($picto, $color:"") {
 
 	@if $picto != "" {

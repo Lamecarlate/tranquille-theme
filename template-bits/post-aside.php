@@ -3,14 +3,14 @@
 	<ul class="post-aside-group post-format">
 		<?php $format_name = get_post_format_string($format) ; ?>
 		<li >
-			<a 
+			<!--<a 
 				href="<?php echo get_post_format_link($format) ; ?>"
 				title="<?php echo esc_attr( sprintf( __( "View all posts of %s format" ), $format_name ) ); ?>"
 				class="post-aside-item with-picto"
-			>
+			>-->
 				<span aria-hidden="true" class="post-aside-item-picto picto picto-format-<?php echo $format ; ?>"></span>
-				<span class="post-aside-item-name"><?php echo $format_name ; ?></span>
-			</a>
+				<!--<span class="post-aside-item-name"><?php echo $format_name ; ?></span>-->
+			<!--</a>-->
 		</li>
 	</ul>
 	<?php endif ; ?>

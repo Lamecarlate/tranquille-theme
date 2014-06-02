@@ -1,3 +1,7 @@
+/* ==KNACSS
+* Knacss microframework: http://knacss.com/
+============================================*/
+
 // Sass config file
 @import "knacss/00-config";
 
@@ -16,11 +20,3 @@
 @import "knacss/10-gmaps";
 @import "knacss/11-ie";
 @import "knacss/12-styling";
-
-/* ----------------------------- */
-/* ==own stylesheet              */
-/* ----------------------------- */
-
-/* Here should go your own CSS styles */
-/* You can also link them with a Sass @import */
-/* @import "my-styles"; */

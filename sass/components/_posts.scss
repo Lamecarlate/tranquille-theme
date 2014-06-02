@@ -1,3 +1,7 @@
+/* ==POSTS
+* 
+===========================================*/
+
 .post.type-post {
 	margin-bottom: .75em;
 	padding-bottom: .75em;
@@ -174,10 +178,6 @@
 .post-aside-item {
 	position: relative;
 
-	a {
-		//display: block;
-	}
-
 	@media (max-width: $extra-large-screen) {
 		display: inline-block;
 	}
@@ -215,28 +215,6 @@
 
 }
 
-
-
-.picto-format-quote:after {
-	content: '\e6f3';
-}
-.picto-format-link:after {
-	content: '\e705';
-}
-.picto-format-image:after {
-	content: '\e619';
-}
-.picto-format-gallery:after {
-	content: '\e64d';
-}
-.picto-format-status:after {
-	content: '\e771';
-}
-.picto-format-aside:after {
-	content: '\e6b5';
-}
-
-
 .post-tags li,
 .post-categories li {
 	@media (max-width: $extra-large-screen) {
@@ -255,3 +233,45 @@
 		content: '\e613';
 	}
 }
+
+.post-format .post-aside-item-picto {
+	position: absolute;
+	z-index: -1;
+
+	top: -.5em;
+	right: -.5em;
+
+	font-size: 3.5em;
+
+	opacity: .3;
+
+	@media (max-width: $extra-large-screen) {
+		right: auto;
+		left: -.5em;
+	}
+}
+
+
+
+.picto-format-quote:after {
+	content: '\e6f3';
+}
+.picto-format-link:after {
+	//content: '\e705';
+	content: '\e6f4';
+}
+.picto-format-image:after {
+	content: '\e619';
+}
+.picto-format-gallery:after {
+	content: '\e64d';
+}
+.picto-format-status:after {
+	content: '\e771';
+}
+.picto-format-aside:after {
+	content: '\e6b5';
+}
+
+
+

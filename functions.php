@@ -213,6 +213,25 @@ function twentythirteen_get_link_url() {
 }
 
 /**
+ * Remove the first link of an article (default is on the excerpt)
+ * 
+ * @return string The content without the first link
+ */
+function tranquille_remove_first_link ($content, $excerpt = TRUE) {
+
+	if($excerpt === FALSE) {
+		$pattern = '/<a\s[^>]*?href=([\'"])(.+?)\1/is';
+	}
+	else {
+		$pattern = '`((?:https?|ftp)://\S+?)(?=[[:punct:]]?(?:\s|\Z)|\Z)/?`'; 
+	}
+ 
+	$content = trim(preg_replace($pattern, "", $content, 1));
+
+	return $content;
+}
+
+/**
  * DoFollow
  * 
  * Remove nofolow attributes on links

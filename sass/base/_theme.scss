@@ -1,4 +1,9 @@
-/* =Colors
+/* ==THEME
+* Colors, and custom tweakings of the theme, 
+* like the icon for categories (which are specific for your blog)
+==============================================*/
+
+/* =COLORS
 -------------------------------------------*/
 
 $background-color: #E3E5E7;
@@ -297,6 +302,10 @@ button:focus {
 	@include category-picto("\e643", "#666");
 }
 
+.post-format .picto:after {
+	color: $ui-link-color;
+}
+
 .post-figure {
 	background: #fff;
 }
@@ -304,6 +313,7 @@ button:focus {
 
 /* =FORMATS
 -----------------------------------*/
+
 .format-gallery {
 	.gallery-thumb:before {
 		background: $background-color;

@@ -18,22 +18,9 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-
-	<?php if ( !is_single() ) : ?>
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php echo tranquille_remove_first_link(get_the_excerpt()); ?>
 	</div><!-- .entry-summary -->
-	<?php else : ?>
-	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'tranquille' ) ); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'tranquille' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php endif ; ?>
 	
 	<?php tranquille_get_post_footer() ;?>	
 

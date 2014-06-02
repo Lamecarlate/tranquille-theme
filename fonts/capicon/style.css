@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'captain-icon';
-	src:url('fonts/captain-icon.eot?509t6c');
-	src:url('fonts/captain-icon.eot?#iefix509t6c') format('embedded-opentype'),
-		url('fonts/captain-icon.woff?509t6c') format('woff'),
-		url('fonts/captain-icon.ttf?509t6c') format('truetype'),
-		url('fonts/captain-icon.svg?509t6c#captain-icon') format('svg');
+	src:url('fonts/captain-icon.eot?-gxcg6n');
+	src:url('fonts/captain-icon.eot?#iefix-gxcg6n') format('embedded-opentype'),
+		url('fonts/captain-icon.woff?-gxcg6n') format('woff'),
+		url('fonts/captain-icon.ttf?-gxcg6n') format('truetype'),
+		url('fonts/captain-icon.svg?-gxcg6n#captain-icon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -32,11 +32,17 @@
 .icon-uniE65F:before {
 	content: "\e65f";
 }
+.icon-uniE67E:before {
+	content: "\e67e";
+}
 .icon-uniE68D:before {
 	content: "\e68d";
 }
 .icon-uniE6B5:before {
 	content: "\e6b5";
+}
+.icon-uniE6F4:before {
+	content: "\e6f4";
 }
 .icon-uniE614:before {
 	content: "\e614";
